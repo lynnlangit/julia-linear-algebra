@@ -1,2 +1,2 @@
 # julia-linear-algebra
-study note for "Learning Linear Algebra with Julia"
+study notes and sample code (.ipynb) for "Learning Linear Algebra with Julia"
