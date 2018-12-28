@@ -21,11 +21,14 @@ a[1] == based                   # true, first element same
 # Stack Vectors
 x = [1, -2]; y = [1,1,0];       # concat stacked vectors with ';'
 z = [x;y]
-g = [1, -2]; h = [1,1,0];       # using vertical concatenate
+g = [1, -2]; h = [1,1,0];       # using vertical concat
 z = vcat(g,h)
 
 #Watch out!
-z = (x,y)                       # list of 2 vectors
-z = [x,y]                       # array of 2 vectors
+z = (x,y)                       # LIST of 2 vectors
+z = [x,y]                       # ARRAY of 2 vectors
 
+# Vector of first differences
+m = [ 1, 0, 0, -2, 2 ];
+d = m[2:end] - m[1:end-1]       # produces [ -1, 0, -2, 4 ]
 
