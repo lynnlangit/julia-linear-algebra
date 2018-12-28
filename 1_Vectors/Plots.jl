@@ -7,7 +7,5 @@ temps = [ 71, 71, 68, 69, 68, 69, 68, 74, 77, 82, 85, 86,
  73, 72, 70, 70, 68, 67 ];
 
 plot(temps, marker = :circle, legend = false, grid = false)
-
-#saving
-#savfig("temperature.pdf")
+#savefig(temps,"temperature.pdf")
 
