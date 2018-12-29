@@ -26,7 +26,14 @@ plot!([0, 800], [0, 800], linestyle = :dash);
 plot!(xlims = (0,800), ylims = (0,800), size = (500,500));
 plot!(xlabel = "Actual price", ylabel = "Predicted price");
 
-# Install VMLS
+# Install VMLS to JuliaBox
+# Go to git, enter 'https:////github.com/VMLS-book/VMLS.jl.git'
+# Go to package manager, add 'VMLS'
+# Wait up to 15 minutes (for package build)
+
+# --OR--
+
+# Install VMLS to Julia runtime (local machine)
 # Go to Julia prompt, type ']' to open package manager
 # Get library from 'pkg>' prompt 
 #    type 'add https:////github.com/VMLS-book/VMLS.jl'
