@@ -9,6 +9,7 @@ y_hat(x), y                     # (161.37557999999999, 115)
 x = [1.324,2];  y = 234.50;
 y_hat(x), y
 
+using VMLS                      # see below to install package
 D = house_sales_data();
 price = D["price"]
 area = D["area"]
@@ -24,6 +25,13 @@ plot!([0, 800], [0, 800], linestyle = :dash);
 # make axes equal and add labels
 plot!(xlims = (0,800), ylims = (0,800), size = (500,500));
 plot!(xlabel = "Actual price", ylabel = "Predicted price");
+
+# Install VMLS
+# Go to Julia prompt, type ']' to open package manager
+# Get library from 'pkg>' prompt 
+#    type 'add https:////github.com/VMLS-book/VMLS.jl'
+#    'ctrl + C' to exit pakage manager prompt
+
 
 
 
