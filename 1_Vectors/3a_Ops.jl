@@ -19,5 +19,24 @@ ei                              # produces [ 0.0, 0.0, 1.0, 0.0]
 unit_vector(i,n) = [zeros(i-1); 1 ; zeros(n-i)]
 unit_vector(3,4)                # produces [ 0.0, 0.0, 1.0, 0.0]
 
-ones(2)                         creates one vector of dim 2
-rand(2)                         creates rand vector of dim 2
+ones(2)                         # creates one vector of dim 2
+rand(2)                         # creates rand vector of dim 2
+
+# Add or subtract vectors
+[ 0, 7, 3] + [ 1, 2, 0]
+[ 1, 9 ] - [ 1, 1] 
+
+# Scalar vector operations
+x = [ 0, 2, -1 ];
+2.2 * x
+x / 3
+[ 1.1, -3.7, 0.3 ] .- 1.4       # '.' applies op to each element
+0.7 .+ [1,-1]                   # '.' applies op to each element
+
+p_1= [ 22.15, 89.32, 56.77 ];
+p_2 = [ 23.05, 87.32, 57.13 ];
+r = (p_2 - p_1) ./ p_1          # '.' applies op to each element
+
+w = [1,2,2]; z = [1,2,3];
+w == z                          # returns false
+w .== z                         # returns true, true, false
