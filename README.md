@@ -1,5 +1,7 @@
 # julia-linear-algebra
-study notes and sample code for "Learning Linear Algebra with Julia"
+Study notes and sample code for "Learning Linear Algebra with Julia". 
 
-- Stanford book is [here](http://vmls-book.stanford.edu/vmls-julia-companion.pdf)
-- Julia-Box, on-line IDE is [here](https://juliabox.com/)
+Also includes some reference notebooks with key concepts, such as matrix operations.
+
+- Stanford on-line book "Applied Linear Algebra with Julia Language" is [here](http://vmls-book.stanford.edu/vmls-julia-companion.pdf)
+- Julia-Box, on-line IDE, is [here](https://juliabox.com/)
